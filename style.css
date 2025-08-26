@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+    background-image: url('../image.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+h1{
+	font-size: 60px;
+	color: blue;
+	letter-spacing: 4px;
+	font-family: arias,sans-serif;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+h2{
+	font-size: 60px;
+	font-family: arias,sans-serif;
+	color: yellow;
+	letter-spacing: 4px;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+	align-items: center;
+}
+.btn{
+	padding: 10px 20px;
+	width: 200px;
+	cursor: pointer;
+	font-size: 20px;
+	background-color: orangered;
+	border: none; 
+	border-radius: 5px;
+}
+.btn:hover{
+	filter: brightness(0.8)
+}
+.active.container{
+	filter: blur(5px) brightness(0.7)
+}
+.popup-container{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	width: 400px;
+	height: 300px;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-image: url('../photo.jpeg');
+	background-size: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+h4{
+	font-size: 40px;
+	font-family: sans-serif;
+	margin: 10px 0;
+	color: red;
+}
+label{
+	color: yellow;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.popup-btn{
+	background-color: orangered;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: sans-serif;
+	border: 2px solid;
+}
+input{
+	padding: 10px;
+	border: 2px solid; 
+	margin: 10px 0;
+	font-size: 20px;
+	text-align: center;
+}
+input::placeholder{
+	color: lightgrey;
+}
+.close-icon{
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+}
+.close-icon:hover{
+	color: orangered;
+}
+.active.popup-container{
+	visibility: hidden;
+}
